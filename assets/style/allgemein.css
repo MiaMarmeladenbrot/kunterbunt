@@ -1,0 +1,137 @@
+@font-face {
+  font-family: Gochi;
+  src: url(../font/GochiHand-Regular.ttf);
+}
+
+@font-face {
+  font-family: Rakkas;
+  src: url(../font/Rakkas-Regular.ttf);
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(../font/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Baloo2;
+  src: url(../font/Baloo2-VariableFont_wght.ttf);
+}
+
+/* ! Allgemeine Styles  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100vw;
+  margin: 0 auto;
+
+  background-color: #ffe1cc;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: clamp(3rem, 10vw, 18rem);
+  color: #332623;
+  font-family: Gochi;
+  line-height: 70%;
+
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: clamp(3rem, 4vw, 5rem);
+  font-family: Baloo2;
+  color: #332623;
+
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: clamp(2.5rem, 3.3vw, 4rem);
+}
+
+h4 {
+  font-size: clamp(2.8rem, 3.2vw, 3.8rem);
+}
+
+h5 {
+  font-size: clamp(2.5rem, 3vw, 3.2rem);
+}
+
+h6 {
+  font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+}
+
+p,
+li {
+  font-size: clamp(1.8rem, 2vw, 2rem);
+  font-family: Baloo2;
+  color: #332623;
+
+  margin-bottom: 2rem;
+}
+
+a {
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
+  text-decoration: none;
+}
+
+.button {
+  background-color: #332623;
+  color: #ffe1cc;
+  text-transform: uppercase;
+  font-family: Baloo2;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 1px 10px;
+}
+
+.button:hover {
+  color: #ffb54a;
+}
+
+/* ! Navigation */
+nav {
+  text-transform: uppercase;
+  color: black;
+  font-family: Raleway;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 3vw 10vw;
+
+  /* margin-bottom: 30px; */
+}
+
+nav a {
+  padding: 0 30px;
+  color: #000000;
+  font-family: Raleway;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ffb54a;
+}
+
+.home {
+  font-size: 2.5rem;
+}
+
+.active {
+  color: #ff7b4d;
+}

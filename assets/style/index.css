@@ -1,0 +1,44 @@
+header {
+  background: url(../img/desktop-bg.png) center no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
+}
+
+.greeting {
+  display: flex;
+
+  margin: 0 4vw;
+
+  text-align: center;
+}
+
+.greeting img {
+  width: 40%;
+  object-fit: contain;
+}
+
+.greeting div {
+  margin-top: 6rem;
+}
+
+.greeting p {
+  max-width: 50ch;
+  padding: 0 10rem;
+}
+
+/* ! Animation der Luftballons */
+img {
+  animation: baloons 5s linear infinite;
+}
+
+@keyframes baloons {
+  0%,
+  100% {
+    transform: translate(50px, 10px);
+  }
+
+  50% {
+    transform: translate(-20px, -70px);
+  }
+}

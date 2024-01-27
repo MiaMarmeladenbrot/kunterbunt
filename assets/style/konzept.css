@@ -1,0 +1,14 @@
+header {
+  background: url(../img/konzept-bg.png) center no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.konzept {
+  margin: 0 6vw 0 8vw;
+}

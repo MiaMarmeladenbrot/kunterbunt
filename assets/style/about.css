@@ -1,0 +1,30 @@
+header {
+  background: url(../img/about-bg.png) center no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.about {
+  margin: 0 6vw 0 10vw;
+}
+
+.about article {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+}
+
+.about p {
+  max-width: 60%;
+}
+
+.about img {
+  max-width: 35%;
+  margin-top: -4rem;
+  object-fit: contain;
+}

@@ -1,0 +1,36 @@
+header {
+  background: url(../img/einrichtung-bg.png) center no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.einrichtung {
+  margin: 0 6vw 0 8vw;
+}
+
+.einrichtung article {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  /* width: 50%; */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  max-width: 40%;
+  object-fit: contain;
+}
+
+.gallery img:active {
+  transform: scale(2);
+}

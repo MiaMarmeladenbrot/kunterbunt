@@ -1,0 +1,27 @@
+header {
+  background: url(../img/contact-bg.png) center no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.contact {
+  margin: 0 6vw 0 8vw;
+}
+
+.contact a {
+  font-size: clamp(1.8rem, 2vw, 2rem);
+  color: #ff7b4d;
+}
+
+.contact p {
+  margin-bottom: 0;
+}
+
+.contact div {
+  margin-bottom: 15rem;
+}
