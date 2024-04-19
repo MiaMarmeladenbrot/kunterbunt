@@ -30,6 +30,7 @@ header {
 /* ! Animation der Luftballons */
 img {
   animation: baloons 5s linear infinite;
+  /* max-width: 500px; */
 }
 
 @keyframes baloons {
@@ -40,5 +41,19 @@ img {
 
   50% {
     transform: translate(-20px, -70px);
+  }
+}
+
+/* ! Media Queries  */
+@media only screen and (max-width: 850px) {
+  @keyframes baloons {
+    0%,
+    100% {
+      transform: translate(10rem, 35rem);
+    }
+
+    50% {
+      transform: translate(1rem, 25rem);
+    }
   }
 }

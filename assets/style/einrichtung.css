@@ -2,7 +2,7 @@ header {
   background: url(../img/einrichtung-bg.png) center no-repeat;
   background-size: cover;
 
-  height: 100vh;
+  min-height: 100vh;
 }
 
 h2 {
