@@ -13,6 +13,13 @@ h2 {
   margin: 0 6vw 0 8vw;
 }
 
+.contact article {
+  display: flex;
+  gap: 17rem;
+
+  margin-bottom: 5rem;
+}
+
 .contact a {
   font-size: clamp(1.8rem, 2vw, 2rem);
   color: #ff7b4d;
@@ -20,6 +27,10 @@ h2 {
 
 .contact p {
   margin-bottom: 0;
+}
+
+.contact article p:last-of-type {
+  margin-bottom: 2rem;
 }
 
 .contact div {

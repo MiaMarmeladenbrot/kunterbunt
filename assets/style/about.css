@@ -11,6 +11,8 @@ h2 {
 
 .about {
   margin: 0 6vw 0 10vw;
+
+  padding-bottom: 4rem;
 }
 
 .about article {
@@ -25,6 +27,7 @@ h2 {
 
 .about img {
   max-width: 35%;
-  margin-top: -4rem;
+  margin-top: -7rem;
   object-fit: contain;
+  border-radius: 50%;
 }
