@@ -6,35 +6,55 @@ header {
 }
 
 .about {
-  margin: 0 6vw 0 10vw;
-  padding-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about article {
   display: flex;
   justify-content: center;
-  gap: 15rem;
-}
+  gap: 10rem;
+  overflow: visible;
+  /* # warum geht overflow noch nicht? */
 
-/* .about p {
-  max-width: 60%;
-} */
+  margin-inline: 18rem;
+}
 
 .about img {
   max-width: 35%;
-  margin-top: -7rem;
+  /* margin-top: -7rem; */
   object-fit: contain;
   border-radius: 50%;
 }
 
 /* ! Media Queries: Tablet  */
 @media only screen and (max-width: 850px) {
+  .about {
+    padding-block: 5rem;
+  }
+
   .about article {
     flex-direction: column;
-    gap: 8rem;
+    align-items: center;
+    gap: 5rem;
+
+    margin-inline: 7rem;
   }
 
   .about img {
-    max-width: 100%;
+    max-width: 65%;
+  }
+}
+
+/* ! Media Queries: Tablet  */
+@media only screen and (max-width: 450px) {
+  .about article {
+    gap: 2rem;
+
+    margin-inline: 4rem;
+  }
+  .about img {
+    max-width: 85%;
   }
 }

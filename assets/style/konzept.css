@@ -10,6 +10,28 @@ header {
 }
 
 .konzept {
-  margin: 0 6vw 0 8vw;
-  padding-block: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.konzept article {
+  margin-inline: 18rem;
+}
+
+/* ! Media Queries: Tablet  */
+@media only screen and (max-width: 850px) {
+  .konzept {
+    padding-block: 5rem;
+  }
+
+  .konzept article {
+    margin-inline: 7rem;
+  }
+}
+
+/* ! Media Queries: Tablet  */
+@media only screen and (max-width: 450px) {
+  .konzept article {
+    margin-inline: 4rem;
+  }
 }
