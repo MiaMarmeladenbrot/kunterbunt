@@ -42,7 +42,7 @@ img {
 }
 
 h1 {
-  font-size: clamp(3rem, 10vw, 18rem);
+  font-size: clamp(5rem, 10vw, 18rem);
   color: #332623;
   font-family: Gochi;
   line-height: 70%;
@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(3rem, 4vw, 5rem);
+  font-size: clamp(3rem, 4vw, 4rem);
   font-family: Baloo2;
   color: #332623;
   text-transform: uppercase;
@@ -60,7 +60,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(2.5rem, 3.3vw, 4rem);
+  font-size: clamp(2.5rem, 3.3vw, 3.5rem);
   font-family: Baloo2;
   color: #332623;
 
@@ -189,12 +189,10 @@ nav a:hover,
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* height: 50vh;
-  width: 50%; */
-  /* max-width: 200px; */
+
   position: fixed;
   top: 50px;
-  right: -200px;
+  right: -1200px;
 
   transition: 0.3s ease;
 }

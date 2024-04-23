@@ -14,13 +14,13 @@ header {
   text-align: center;
 }
 
-.greeting img {
-  width: 40%;
-  object-fit: contain;
-}
-
 .greeting div {
   margin-top: 6rem;
+  padding-block: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .greeting h2 {
@@ -33,19 +33,21 @@ header {
 }
 
 /* ! Animation der Luftballons */
-img {
-  animation: baloons 5s linear infinite;
-  /* max-width: 500px; */
+.greeting img {
+  width: 35%;
+  object-fit: contain;
+
+  animation: baloons 8s linear infinite;
 }
 
 @keyframes baloons {
   0%,
   100% {
-    transform: translate(50px, 10px);
+    transform: translate(25%, 20%);
   }
 
   50% {
-    transform: translate(-20px, -70px);
+    transform: translate(2%, -10%);
   }
 }
 
@@ -54,11 +56,13 @@ img {
   @keyframes baloons {
     0%,
     100% {
-      transform: translate(20rem, 40rem);
+      /* transform: translate(20rem, 40rem); */
+      transform: translate(110%, 150%);
     }
 
     50% {
-      transform: translate(1rem, 30rem);
+      /* transform: translate(1rem, 30rem); */
+      transform: translate(20%, 110%);
     }
   }
 
@@ -68,11 +72,39 @@ img {
   }
 
   .greeting div {
-    margin-top: -10rem;
+    margin-top: -25rem;
   }
 
   .greeting p {
-    max-width: 50ch;
+    max-width: 38ch;
     padding: 0 3rem;
+  }
+
+  .greeting img {
+    width: 45%;
+  }
+}
+
+/* ! Media Queries: Mobile  */
+@media only screen and (max-width: 450px) {
+  @keyframes baloons {
+    0%,
+    100% {
+      /* transform: translate(20rem, 40rem); */
+      transform: translate(120%, 230%);
+    }
+
+    50% {
+      /* transform: translate(1rem, 30rem); */
+      transform: translate(10%, 190%);
+    }
+  }
+
+  .greeting div {
+    margin-top: -15rem;
+  }
+
+  .greeting p {
+    max-width: 30ch;
   }
 }

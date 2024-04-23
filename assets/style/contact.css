@@ -35,7 +35,28 @@ header {
 }
 
 /* ! Media Queries: Tablet  */
+
 @media only screen and (max-width: 850px) {
+  /* .contact article {
+    gap: 10rem;
+  } */
+
+  .contact article {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact div {
+    margin-bottom: 0;
+  }
+
+  iframe {
+    width: 650px;
+  }
+}
+
+/* ! Media Queries: Mobile */
+@media only screen and (max-width: 450px) {
   .contact article {
     flex-direction: column;
     gap: 2rem;
