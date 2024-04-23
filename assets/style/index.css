@@ -9,6 +9,7 @@ header {
   display: flex;
 
   margin: 0 4vw;
+  padding-block: 2rem;
 
   text-align: center;
 }
@@ -20,6 +21,10 @@ header {
 
 .greeting div {
   margin-top: 6rem;
+}
+
+.greeting h2 {
+  text-transform: unset;
 }
 
 .greeting p {
@@ -49,7 +54,7 @@ img {
   @keyframes baloons {
     0%,
     100% {
-      transform: translate(15rem, 35rem);
+      transform: translate(20rem, 40rem);
     }
 
     50% {

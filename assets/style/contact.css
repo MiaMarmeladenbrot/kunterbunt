@@ -5,12 +5,9 @@ header {
   min-height: 100vh;
 }
 
-h2 {
-  text-transform: uppercase;
-}
-
 .contact {
   margin: 0 6vw 0 8vw;
+  padding-block: 5rem;
 }
 
 .contact article {
@@ -35,4 +32,20 @@ h2 {
 
 .contact div {
   margin-bottom: 15rem;
+}
+
+/* ! Media Queries: Tablet  */
+@media only screen and (max-width: 850px) {
+  .contact article {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact div {
+    margin-bottom: 0;
+  }
+
+  iframe {
+    width: 320px;
+  }
 }

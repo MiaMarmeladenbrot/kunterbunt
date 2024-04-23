@@ -1,8 +1,8 @@
 # pia
 
 - Impressum checken
-- Galerie Einrichtung hinzufügen
+- Galerie für Einrichtung hinzufügen
 - Media Queries
-- Abstände nach unten anpassen
 - SEO Daten
+- Animation noch mal checken mit Angaben
 - Aushang machen

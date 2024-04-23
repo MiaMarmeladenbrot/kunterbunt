@@ -5,14 +5,9 @@ header {
   min-height: 100vh;
 }
 
-h2 {
-  text-transform: uppercase;
-}
-
 .about {
   margin: 0 6vw 0 10vw;
-
-  padding-bottom: 4rem;
+  padding-block: 5rem;
 }
 
 .about article {
@@ -21,13 +16,25 @@ h2 {
   gap: 15rem;
 }
 
-.about p {
+/* .about p {
   max-width: 60%;
-}
+} */
 
 .about img {
   max-width: 35%;
   margin-top: -7rem;
   object-fit: contain;
   border-radius: 50%;
+}
+
+/* ! Media Queries: Tablet  */
+@media only screen and (max-width: 850px) {
+  .about article {
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  .about img {
+    max-width: 100%;
+  }
 }

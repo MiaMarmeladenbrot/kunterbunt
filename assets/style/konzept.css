@@ -5,10 +5,11 @@ header {
   min-height: 100vh;
 }
 
-h2 {
-  text-transform: uppercase;
+.konzept h3 {
+  font-weight: 400;
 }
 
 .konzept {
   margin: 0 6vw 0 8vw;
+  padding-block: 5rem;
 }

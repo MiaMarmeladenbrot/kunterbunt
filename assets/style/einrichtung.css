@@ -5,12 +5,9 @@ header {
   min-height: 100vh;
 }
 
-h2 {
-  text-transform: uppercase;
-}
-
 .einrichtung {
   margin: 0 6vw 0 8vw;
+  padding-block: 5rem;
 }
 
 /* .einrichtung article {
