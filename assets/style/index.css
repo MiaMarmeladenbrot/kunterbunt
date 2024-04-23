@@ -44,16 +44,30 @@ img {
   }
 }
 
-/* ! Media Queries  */
+/* ! Media Queries: Tablet  */
 @media only screen and (max-width: 850px) {
   @keyframes baloons {
     0%,
     100% {
-      transform: translate(10rem, 35rem);
+      transform: translate(15rem, 35rem);
     }
 
     50% {
-      transform: translate(1rem, 25rem);
+      transform: translate(1rem, 30rem);
     }
+  }
+
+  .greeting {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .greeting div {
+    margin-top: -10rem;
+  }
+
+  .greeting p {
+    max-width: 50ch;
+    padding: 0 3rem;
   }
 }

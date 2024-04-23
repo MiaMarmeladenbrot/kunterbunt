@@ -111,8 +111,6 @@ a {
 /* ! Navigation */
 nav {
   text-transform: uppercase;
-  color: black;
-  font-family: Raleway;
 
   display: flex;
   justify-content: space-evenly;
@@ -123,14 +121,18 @@ nav {
   /* margin-bottom: 30px; */
 }
 
-nav a {
+nav a,
+.off-screen-menu a {
   padding: 0 30px;
   color: #000000;
   font-family: Raleway;
   font-weight: 500;
+
+  margin-bottom: 1rem;
 }
 
-nav a:hover {
+nav a:hover,
+.off-screen-menu a:hover {
   color: #ffb54a;
 }
 
@@ -140,4 +142,71 @@ nav a:hover {
 
 .active {
   color: #ff7b4d;
+}
+
+/* ! Burger Menü */
+.burger-wrapper {
+  padding: 2rem 0;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.burger {
+  background-color: #332623;
+  width: 2.3rem;
+  height: 0.4rem;
+  border-radius: 0.4rem;
+  margin: 0.3rem;
+
+  display: none;
+}
+
+.burger.show {
+  background-color: #ff7b4d;
+}
+
+.burger-wrapper.show div:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.burger-wrapper.show div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-wrapper.show div:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.off-screen-menu {
+  background-color: #ffe1cc;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 50vh;
+  width: 50%;
+  max-width: 200px;
+  position: fixed;
+  top: 50px;
+  right: -200px;
+
+  transition: 0.3s ease;
+}
+
+.off-screen-menu.show {
+  right: 20px;
+}
+
+/* ! Media Queries: Tablet  */
+@media only screen and (max-width: 850px) {
+  .burger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
 }
