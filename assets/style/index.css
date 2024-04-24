@@ -15,12 +15,17 @@ header {
 }
 
 .greeting div {
-  margin-top: 6rem;
-  padding-block: 5rem;
+  padding-left: 6rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.greeting h1 {
+  max-width: 5ch;
+  word-break: break-all;
+  hyphens: auto;
 }
 
 .greeting h2 {
@@ -73,6 +78,11 @@ header {
 
   .greeting div {
     margin-top: -25rem;
+    padding-left: unset;
+  }
+
+  .greeting h1 {
+    max-width: unset;
   }
 
   .greeting p {
@@ -102,6 +112,7 @@ header {
 
   .greeting div {
     margin-top: -15rem;
+    padding-block: 5rem;
   }
 
   .greeting p {
