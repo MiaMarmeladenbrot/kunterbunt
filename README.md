@@ -7,6 +7,8 @@
 - Media Queries
 - SEO Daten
 - about: overflow: hidden
+- contact seite zwischen queries einbauen
+- home page noch mal checken in kleiner tablet größe
 
 ## Contributor
 
